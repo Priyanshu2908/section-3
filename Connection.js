@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
 
-const url ='mongodb+srv://PriyanshuChaubey29:Priyanshu2908@cluster0.mjm3gew.mongodb.net/luciferisinnocent?retryWrites=true&w=majority'
+const url = 'mongodb+srv://mmm:mmm@cluster0.gvyon.mongodb.net/DB26JULY?retryWrites=true&w=majority';
 
-//Asynchronous Function- returns a promise
+// asynchronous function - returns a promise
 mongoose.connect(url)
 .then((result) => {
+    // console.log(result);
     console.log('connected to mongodb');
-}).catch((err) => {
+})
+.catch((err) => {
     console.log(err);
 });
 
-console.log('do other stuff');
+module.exports = mongoose;
