@@ -7,7 +7,7 @@ const port = 5000;
 
 // import routers
 const UserRouter = require('./routers/userRouter');
-const ProductRouter = require('./routers/productRouter');
+const ProductRouter = require('./routers/productrouter');
 
 // middleware to convert json data to javascript object
 app.use(express.json());
@@ -15,8 +15,6 @@ app.use(express.json());
 // middlewares
 app.use('/user', UserRouter);
 app.use('/product', ProductRouter);
-
-
 
 // creating routes
 app.get('/', (req, res) => {
